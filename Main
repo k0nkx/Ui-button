@@ -1,3 +1,14 @@
+-- Event connection
+TextButton.MouseButton1Click:Connect(OnButtonClick)
+
+local vim = game:GetService("VirtualInputManager")
+
+-- Function to handle button click
+local function onButtonClick()
+    -- Send the key event for P directly
+    vim:SendKeyEvent(true, Enum.KeyCode.P, false, game)
+end
+
 local function createGUI()
     -- Create ScreenGui, Frame, and ImageButton
     local ScreenGui = Instance.new("ScreenGui")
