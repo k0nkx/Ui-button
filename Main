@@ -1,31 +1,3 @@
--- hi chat 
--- ui button
-loadstring(game:HttpGet("https://raw.githubusercontent.com/k0nkx/Ui-button/main/Main", true))()
-
-local Library = loadstring(game:HttpGet("https://pastebin.com/raw/kpLzpNXc"))()
-local AkaliNotif = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/Dynissimo/main/Scripts/AkaliNotif.lua"))()
-local Notify = AkaliNotif.Notify
-
--- Create UI window
-local Window = Library:CreateWindow("Aura X ᵃˢᶦᵃⁿʸᵘʰ ᵇᵘᶦˡᵈ", Vector2.new(300, 300), Enum.KeyCode.P)
-
--- Create tabs
-local AimingTab = Window:CreateTab("Main")
-local SilentAimTab = Window:CreateTab("Silent")
-local VisualsTab = Window:CreateTab("Esp")
-local MiscTab = Window:CreateTab("Misc")
-local TeleportTab = Window:CreateTab("Tp(dh)")
-
--- Create sections
-AimingTab:CreateSector("Camlock", "left")
-AimingTab:CreateSector("Aimlock", "right")
-SilentAimTab:CreateSector("SilentAim", "left") 
-VisualsTab:CreateSector("Esp", "left")
-TeleportTab:CreateSector("Teleports", "left")
-MiscTab:CreateSector("Misc", "left")
-
-wait(9)
-
 local Player = game.Players.LocalPlayer
 local PlayerGui = Player:WaitForChild("PlayerGui")
 
